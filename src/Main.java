@@ -13,5 +13,8 @@ public class Main {
         space.addUser(user1);
         space.addUser(user2);
         space.printUsers();
+
+        System.out.println(space.findUserById(2));
+        System.out.println(space.findUserByName("Alessio"));
     }
 }
