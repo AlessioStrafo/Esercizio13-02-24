@@ -16,5 +16,12 @@ public class Main {
 
         System.out.println(space.findUserById(2));
         System.out.println(space.findUserByName("Alessio"));
+
+
+        System.out.println(space.findByBirthday(OffsetDateTime.parse("2000-11-08T00:00:00Z")));
     }
+
+
+
+
 }

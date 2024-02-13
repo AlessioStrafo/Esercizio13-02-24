@@ -1,3 +1,4 @@
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,5 +45,15 @@ public class Working {
             }
         }
         return foundUser;
+    }
+
+    public List<User> findByBirthday(OffsetDateTime data){
+        List<User> utenti = new ArrayList<>();
+        for (User user : users) {
+            if (user.getDataDiNascita().isAfter(data)){
+                utenti.add(user);
+            }
+        }
+        return utenti;
     }
 }
